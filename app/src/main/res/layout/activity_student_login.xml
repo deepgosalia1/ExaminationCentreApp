@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.droids.user.examinationcentre.Student_login">
+
+    <TextView
+        android:id="@+id/student_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Your Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/stdnt_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/seat_number"
+        android:layout_below="@+id/student_details"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="Class alloted:  01"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/class_stdnt_allot_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stdnt_class"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/stdnt_class" />
+
+    <TextView
+        android:id="@+id/seat_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/stdnt_class"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:text="Seat Number : 02"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/seatno_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seat_number"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/class_stdnt_allot_details" />
+</android.widget.RelativeLayout>

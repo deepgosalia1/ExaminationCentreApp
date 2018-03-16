@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.droids.user.examinationcentre.Admin_teacher">
+
+    <TextView
+        android:id="@+id/admin_teacher_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Register new Teacher"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/admin_teacher_info"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="49dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/teacher_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teach_name"
+        android:layout_marginTop="14dp"
+        android:layout_toStartOf="@+id/teach_name"
+        android:text="New Password"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/teach_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/teacher_name"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/teacher_name"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/admin_teacher_info"
+        android:layout_alignTop="@+id/teacher_new_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/reg_teacher_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/teach_name"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="47dp"
+        android:onClick="registerteacher"
+        android:text="Register Teacher" />
+
+</android.widget.RelativeLayout>

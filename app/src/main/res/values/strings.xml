@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Examination Centre</string>
+    <string name="Loginformat">Choose a Log in format</string>
+
+    <string-array name="Login">
+        <item>Admin</item>
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+
+</resources>
